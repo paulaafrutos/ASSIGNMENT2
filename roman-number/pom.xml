@@ -88,7 +88,7 @@
           </executions>
         </plugin>
         <plugin>
-          <groupId>org.jacoco</groupId>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>0.8.13-SNAPSHOT</version>
           <executions>
