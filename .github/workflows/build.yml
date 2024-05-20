@@ -14,6 +14,12 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean install --file roman-number/pom.xml
 
+      - name: Test
+        run: mvn test --file roman-number/pom.xml
+        
+      - name: Create site
+        run: mvn site --file roman-number/pom.xml
+        
       - name: Run tests
         run: mvn test --file roman-number/pom.xml
 
