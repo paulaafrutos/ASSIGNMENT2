@@ -16,5 +16,11 @@ jobs:
       with:
         java-version: '11'
 
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
     - name: Build with Maven
-      run: mvn clean install
+      run: |
+        mvn clean install
