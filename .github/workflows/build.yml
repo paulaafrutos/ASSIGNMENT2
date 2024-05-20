@@ -17,7 +17,7 @@ jobs:
         java-version: '11'
 
     - name: Change to project directory
-      run: cd path/to/directory/with/pom.xml
+      run: cd roman-number/pom.xml
 
     - name: Build with Maven
       run: mvn clean install
