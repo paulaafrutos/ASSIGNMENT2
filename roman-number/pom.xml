@@ -105,13 +105,6 @@
               <goal>report</goal>
             </goals>
           </execution>
-          <execution>
-            <id>package</id>
-            <phase>site</phase>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
         </executions>
       </plugin>
       </plugins>
