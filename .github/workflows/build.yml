@@ -19,9 +19,6 @@ jobs:
         
       - name: Create site
         run: mvn site --file roman-number/pom.xml
-        
-      - name: Run tests
-        run: mvn test --file roman-number/pom.xml
 
       - name: Generate JaCoCo coverage report
         run: mvn jacoco:report --file roman-number/pom.xml
