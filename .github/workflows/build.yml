@@ -1,12 +1,7 @@
-name: Code Coverage
+name: Build and Code Coverage
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
