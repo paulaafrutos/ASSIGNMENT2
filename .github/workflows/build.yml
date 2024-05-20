@@ -12,4 +12,7 @@ jobs:
           java-version: 8.0.332+9
           cache: 'maven'
       - name: Build with Maven
-        run: ./mvnw -B install --file roman-number/pom.xml
+        run: mvn -B clean install --file roman-number/pom.xml
+
+      - name: Run tests
+        run: mvn test --file roman-number/pom.xml
