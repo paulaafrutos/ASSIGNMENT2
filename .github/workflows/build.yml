@@ -13,17 +13,4 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run: mvn -B install --file roman-number/pom.xml
-      - name: Build with Maven
-        run: mvn clean verify
-        
-      - name: Generate code coverage report
-        run: mvn jacoco:report
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v2
-        with:
-          name: code-coverage
-          path: target/site/jacoco
-
-
-
+      
