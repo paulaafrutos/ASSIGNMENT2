@@ -1,6 +1,6 @@
 # ASSIGNMENT2
 
-Risultato dell'analisi statica:
+## Risultato dell'analisi statica:
 german@pcgerman:~/eclipse-workspace/roman-number$ mvn checkstyle:check
 [INFO] Scanning for projects...
 [INFO] 
@@ -20,7 +20,7 @@ Auditoría concluida.
 [INFO] Finished at: 2024-05-20T07:00:21+02:00
 [INFO] ------------------------------------------------------------------------
 
-Risultato del Build Automation:
+## Risultato del Build Automation:
 Run mvn -B install --file roman-number/pom.xml
 [INFO] Scanning for projects...
 [INFO] 
