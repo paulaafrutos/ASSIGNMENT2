@@ -13,18 +13,3 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run: mvn -B clean install --file roman-number/pom.xml
-
-      - name: Test
-        run: mvn test --file roman-number/pom.xml
-        
-      - name: Create site
-        run: mvn site --file roman-number/pom.xml
-
-      - name: Generate JaCoCo coverage report
-        run: mvn jacoco:report --file roman-number/pom.xml
-
-      - name: Send coverage to Coveralls
-        uses: coverallsapp/github-action@v2
-        with:
-          github-token: ${{ secrets.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 }}
-          path-to-lcov: roman-number/target/site/jacoco/jacoco.xml
