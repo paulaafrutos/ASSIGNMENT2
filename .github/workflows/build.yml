@@ -27,10 +27,16 @@ jobs:
         server-password: ${{ secrets.GITHUB_TOKEN }}
         overwrite-settings: true
         job-status: 'success'
-
+        
+    - name: Change to project directory
+      run: cd roman-number
+      
     - name: Build and test with coverage
       run: |
         mvn clean verify jacoco:report
+
+    - name: Change to project directory
+      run: cd roman-number
 
     - name: Upload coverage report
       uses: actions/upload-artifact@v2
